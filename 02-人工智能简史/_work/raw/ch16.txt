@@ -1,0 +1,1429 @@
+263
+第16章 总结
+Tis better all my thoughts remain unsaid.
+啥也别说了。
+——Umar Khayyam（卡亚姆）
+人工智能领域派系纷杂。人工智能的历史也是几条路线斗争的历史。就像美国心理
+学家威廉·詹姆斯把哲学体系简单地分为理性主义、经验主义和实用主义那样，我
+也为人工智能做了个三分法：逻辑主义（或规则派）、连接主义（或深度学习派、
+统计派）和自然主义。这和常见的把人工智能分为规则派、神经网络派和行为主义
+派略有不同。倒并不是像某些哲学家那样，因为实用主义诞生于美国，就凭着民族
+主义或本地主义的本能更偏好它，在人工智能三派中，即便我在学术遗传上接近自
+然派，也无意夸大它的作用。如此划分自有我的道理。
+我不太理解为什么有些人把与机器人相关的东西都称为“行为主义”，因为机器人
+会动，所以就称为“行为”吗？且不说behaviorism（行为主义）一词在一般的英
+文语境中有特定的含义（无论是普通的日常说法还是特定的哲学所指），机器人学
+没有什么统一的理论基础，大部分工作集中在应用领域。加州大学伯克利分校的坎
+尼（John Canny）等关于空间的理论工作是极少数的例外。即使像机器人专家罗德
+尼·布鲁克斯这样主张“具身智能”（embodied intelligence，“附体智能”也
+许是更好的译法，它更契合西方哲学传统中灵魂的“附体”与“离体”）的人也只
+说action和behavior，而不说behaviorism。当前机器人学的核心困难大多是机械
+工程和材料工程的问题，而不是原理的问题。也许用“机械主义”（mechanism）
+来概括与机械工程相关的工作更加合适。任何东西沾了“主义”，都不是闹着玩儿
+的，凡“主义”都要有理论基础。
+如果说逻辑派或规则派更像哲学上的理性主义者，那么统计派则更像经验主义者。
+规则派更像计划经济，而统计派更像自由市场经济。如果从文学理论看，规则派更
+像以第三人称和全知视角叙述，从而更具可解释性；而统计派或自然派则更像以第
+一人称写作，深度学习的不可解释性令人困扰。目前，对于人工智能在自动驾驶、
+法律和医学健康领域的应用，可解释性是必需的。科学史对科学也有还原论
+（reductionism）和涌现论（emergentism）之分，规则派接近还原论，统计派可
+以算作涌现论。在哲学史上，自逻辑经验主义之后，分析哲学就没有绝对的分裂，
+乔姆斯基大概是个例外。他坚定地自称理性主义者。他对神经网络的不屑可以从神
+经网络的不可解释性中得到解释。至于哪派更有自由意志，哪派更趋宿命，则仁者
+见仁，智者见智了。
+
+264
+神经网络的几起几伏，本身就有戏剧性。明斯基和罗森布拉特之争会让人想起20世
+纪初自然哲学中马赫和玻尔兹曼之争，罗森布拉特之死也有点像玻尔兹曼的自杀，
+他们两位都算是统计派吧。也难怪美国实用主义哲学家威廉·詹姆斯总是把经验主
+义和悲观思想挂钩。所谓深度学习不过是神经网络的层数多一些而已，其实从并行
+性意义上说，所有基于神经网络的模型都是宽的而不是深的，无论网络有多少层。
+定理证明是深的，很难并行化。也恰是因此，定理证明可以解释，而神经网络不可
+解释。
+逻辑派的起源与自动定理证明有着密不可分的关系，而发端于麦卡洛克和皮茨的神
+经网络派与维纳的关系斩不断理还乱，这些工作都在达特茅斯会议之前。至于自然
+主义的思想源头，远了，甚至可以追溯到进化论；近了，也可以追溯到冯诺伊曼的
+细胞自动机。强化学习代表了这一派的最新进展。所罗门诺夫-柯尔莫哥洛夫-蔡汀
+理论是研究广义学习的框架，也是大语言模型的理论基础。强化学习和所罗门诺夫
+归纳的关系是一个开放的重要理论问题。
+如果说英美分析哲学的工具支撑是逻辑的话，那么在某种意义上，所罗门诺夫归纳
+可被当作实用主义的新理论基础。我并没有非得把自然派附会到实用主义的意思。
+曾经被认为复杂的统计派问题，例如图像处理和语音识别，现在已经得到解决或者
+至少已有解决的思路。但符号派的难题，例如定理证明，目前还没看见曙光。可以
+肯定的是，过去的归结方法试图“一招鲜，吃遍天”的思路已经不灵。一阶逻辑无
+望，高阶逻辑就更难了。王浩曾经提过“领域特定”（domain specific）的思
+路。图像和自然语言处理都在数据的帮助下进展神速。职业数学家在大语言模型的
+启发下，开始关注定理证明，期望通过众包合作的方式积累定理证明需要的数据。
+人工智能早期几派之间的分裂反映了哲学传统中不同思想派系的分歧。目前我们已
+经看到这几派的融合，例如深度学习和强化学习的结合形成了深度强化学习，甚至
+有人利用强化学习来做定理证明的工作。考虑到强化学习有助于极大提升大语言模
+型的推理（reasoning）能力，也许这是一条可行的路径。当工程问题更好地被理
+论解释并囊括时，派别的分歧也许是天真和幼稚的。人工智能的核心问题正在被归
+约到几个理论（计算理论和学习理论）问题。
+最后附上3张图，总结人工智能三大流派的演进。图中事件力图按照因果关系排
+列，因果关系是水流，基本也是时间顺序，但也有个别例外。这就好比新建一个水
+库后，再往原有的河道注水，就会打乱时间关系。读者心中有数就行了。
+逻辑主义的演变：从定理证明到知识图谱
+
+265
+连接主义的演变：从神经网络到深度学习
+自然主义的演变：从细胞自动机到强化学习
+
+266
+
+267
+参考文献
+AARONSON S,2013.Quantum Computing since Democritus.Cambridge University
+Press.
+AARONSON S,2013.Why Philosophers Should Care about Computational
+Complexity//COPELAND J,POSY C,SHAGIR
+O.Computability:Turing,Godel,Church and Beyond.MIT Press.
+AARONSON S.Who Can Name the Bigger Number?
+ALAMMAR J,GROOTENDORST M,2024.Hands-On Large Language Models Language
+Understanding and Generation.O'reilly&Associates Inc.
+ALLEMANG D，HANDLER J，2011.Semantic Web for Working Ontologist.2nd
+ed.Morgan Kaufmann（语义万维网：工程实践指南，高等教育出版社，2014）
+ANDERSON J,ROSENFELD E,1998.Talking Nets:An Oral History of Neural
+Networks.Bradford Books.
+ARBIB M，1987.Brains，Machines and Mathematics.2nd ed.Springer.（大脑、
+机器和数学，商务印书馆，1982）
+ARORA S,BARAK B,2009.Computational Complexity:A Modern
+Approach.Cambridge University Press.
+ASCHENBRENNER L,2024.SITUATIONAL AWARENESS:The Decade Ahead.
+BALLANTYNE M,BOYER R S,HINES L M,1996.Woody Bledsoe:His Life and
+Legacy.AI Magazine,17(1):7-20.
+BARTO A,2018.A History of Reinforcement Learning//IJCAI-2018.
+BATTERSON S,2000.Stephen Smale:The Mathematician Who Broke the
+Dimension Barrier.American Mathematical Society.
+BEESON M J,1995.Computerizing Mathematics:Logic and Computation//HERKEN
+R.The Universal Turing Machine:A Half-Century Survey.Springer-
+Verlag,2013:125-156.
+
+268
+BELLMAN R E,1957.Dynamic Programming.Princeton University Press.
+BENENTI G，CASATI G，STRINI G，2004.Principles of Quantum Computation
+and Information.Vol.1.（量子计算与量子信息原理，第一卷：基本概念，科学
+出版社，2011）
+BENNETT C H,1982.The thermodynamics of computation-a
+review.Int.J.Theoretical Physics.21,905
+BENNETT C H,1988.Logical Depth and Physical Complexity//HERKEN
+R(ed.).The Universal Turing Machine:A Half-Century Survey.2nd ed.Oxford
+University Press,1991:227-257.
+BENNETT C H,GACS P,LI M,VITANYI P,et al.,1993.Thermodynamics of
+Computation and Information Distance,STOC.
+BERNERS-LEE T,HENDLER J,LASSILA O,2001.The Semantic Web.Scientific
+American,284 (5):34-43
+BERTSEKAS D P.,2005,Dynamic Programming and Optimal Control,Vol.1 3rd
+ed.Athena Scientific.
+BERWICK R,CHOMSKY N,2016.Why Only Us:Language and Evolution.MIT Press.
+BHATTACHARYA A，2023.The Man from the Future：The Visionary Life of
+John von Neumann.W.W.Norton&Company.（来自未来的人，中信出版集团，
+2023）
+BIBEL W,1987.Automated Theorem Proving.2nd ed.Vieweg.
+BIBEL W,2007.Early History and Perspectives of Automated Deduction//KI
+2007:Advances in Artificial Intelligence.Springer-Verlag:2-18.
+BIRKHOFF G,MACLANE S,1961.A Survey of Modern Algebra.The Macmillan
+Company.
+BLAKE D V,UTTLEY A M,1959.Proceedings of the Symposium on Mechanisation
+of Thought Process.H.M.Stationery Office.
+BLUM L,CUCKER F,SHUB M,et al.,1998.Complexity and Real
+Computation.Springer-Verlag.
+
+269
+BODEN M,2008.Mind as Machine:A History of Cognitive Science.Oxford
+University Press.
+BODEN M，2016.AI：Its Nature and Future.（人工智能的本质与未来，中国人
+民大学出版社，2017）
+BOLHUIS J,TATTERSALL I,CHOMSKY N,et al.,2014.How Could Language Have
+Evolved?PLoS Biology,12(8):e1001934.
+BONACINA M P,STICKEL M E,2013.Automated Reasoning and
+Mathematics.Essays in Honor of William McCune.Springer.
+BOYER R S,MOORE J S,1977.A Fast String Searching
+Algorithm.Communications of ACM,20 (10):762-772.
+BOYER R S,MOORE J S,1979.A Computational Logic Handbook.Academic Press.
+BROOKS R A,2001.The Relationship between Matter and
+Life.Nature,409(6818):409-411.
+BROOKS R A,2002.Flesh and Machines:How Robots Will Change Us.Vintage
+Books.
+BROOKS R A,2013.The Case for Embodied Intelligence//COOPER S B,van
+LEEUWEN J.Alan Turing:His Work and Impact.Elsevier.
+BROWN P F,COCKE J,PIETRA S D,et al.,1988.A Statistical Approach to
+Language Translation//Proceedings of 12th Conference of Computational
+Linguistics.
+BROWN P F,COCKE J,PIETRA S D,et al.,1990.A Statistical Approach to
+Language Translation.Computational Linguistics,16 (2):79-85.
+BUCHANAN B G,1991.Oral History Interview with Bruce G.Buchanan.Charles
+Babbage Institute.
+BUCHANAN B G,2006.A (Very) Brief History of Artificial Intelligence.AI
+Magazine,26 (4):53-60.
+BUCHANAN B G,SHORTLIFFE E H,1984.Rule-Based Expert Systems:The MYCIN
+Experiments of the Stanford Heuristic Programming Project.Addison
+
+270
+Wesley.
+BURKS A W,WANG H,1957.The Logic of Automata—Parts I and II.Journal of
+the Association for Computing Machinery,4(2):193-218,4(3):279-297.
+BURRIS S N,1997.Logic for Mathematics and Computer Science.Prentice
+Hall.
+CALUDE C S(ed.),2007.Randomness and Complexity,from Leibniz to
+Chaitin.World Scientific Publishing Company.
+CALVIN W,1996.How Brains Think:Evolving Intelligence,Then and Now.Basic
+Books.
+CALVIN W,2004.A Brief History of the Mind:From Apes to Intellect and
+Beyond.Oxford University Press.
+CARNAP R,1950.Logical Foundations of Probability.University of Chicago
+Press.
+CHAITIN G J,1965.An Improvement on a Theorem by E.F.Moore,IEEE
+Transactions on Electronic Computers,EC-14(4):466-467.
+CHAITIN G J,1966.On the Length of Programs for Computing Finite Binary
+Sequences.Journal of the Association for Computing Machinery,13(4):547-
+569.
+CHAITIN G J,1969.On the Length of Programs for Computing Finite Binary
+Sequences:Statistical Considerations.Journal of the Association for
+Computing Machinery,16(1):145-159.
+CHAITIN G J,1975.Randomness and Mathematical Proof.Scientific
+American,232(5):47-52.
+CHAITIN G J,2010.To a Mathematical Theory of Evolution and Biological
+Creativity.CDMTCS Research Report Series.
+CHAITIN G J，2012.Proving Darwin：Making Biology Mathematical.Vintage
+Books.（证明达尔文，人民邮电出版社，2015）
+
+271
+CHAITIN G J,2023.Building the World from
+Information&Computation.Expanded 2nd ed.World Scientific Publishing
+Company.
+CHANG C L,LEE C T,1973.Symbolic Logic and Mechanical Theorem
+Proving.Academic Press.
+CHEN Z N,DONGARRA J,XU Z W,2018.Post-exascale Supercomputing:Research
+Opportunities Abound.Frontiers of Information Technology&Electronic
+Engineering,19:1203-1208.
+CHIOU S,MUSIC C,SPRAGUE K,et al.,2001.A Marriage of Convenience:The
+Founding of the MIT Artificial Intelligence Laboratory.
+CHOMSKY N,1953.Systems of Syntactic Analysis.Journal of Symbolic
+Logic,18(3):242-256.
+CHOMSKY N,1956.Three Models for the Description of Language.IRE
+Transactions on Information Theory,2(3):113-124.
+CHOMSKY N，1957.Syntactic Structures.Mouton Publishers.（句法结构，中国
+社会科学出版社，1979）
+CHOMSKY N,1975.The Logical Structure of Linguistic Theory.Plenum Press.
+CHOMSKY N,1986.Knowledge of Language:Its Nature,Origins,and
+Use.Praeger.
+CHOMSKY N，2011.The Science of Language，Interviews with James
+McGilvray.Cambridge University Press.（语言的科学，商务印书馆，2015）
+CHOMSKY N，2016.What Kinds of Creatures Are We？Columbia University
+Press.（我们是谁，广西师范大学出版社，2022）
+CHOU S C,1987.Mechanical Geometry Theorem Proving.Springer.
+CHRISTIAN B,2020.The Alignment Problem:Machine Learning and Human
+Values.W.W.Norton&Company.
+CHURCH A,1941.Calculi of Lambda Conversion.Princeton University Press.
+
+272
+COHEN P R,FEIGENBAUM E A,1982.The Handbook of Artificial
+Intelligence,Vol.3.HeurisTech Press.
+COLBY K M,1975.Artificial Paranoia:A Computer Simulation of Paranoid
+Processes.Pergamon Press.
+CONWAY F,SIEGELMAN J,2009.Dark Hero of the Information Age.Basic Books.
+COOPER S B,HODGES A,2016.The Once and Future Turing:Computing the
+World.Cambridge University Press.
+COOPER S B,LEEUWEN J V,2013.Alan Turing:His Work and Impact.Elsevier.
+COPELAND J,POSY C J,SHAGRIR
+O,2013.Computability:Turing,Godel,Church,and Beyond.MIT Press.
+COPELAND J,1993.Artificial Intelligence:A Philosophical
+Introduction.Blackwell.
+COPELAND J,2012.Turing:Pioneer of the Information Age.Oxford University
+Press.
+COVER T M,THOMAS J A,2005.Elements of Information Theory.John
+Wiley&Sons.
+CRICK F,1994.The Astonishing Hypothesis:The Scientific Search for the
+Soul.Simon and Schuster.
+CRITCHLEY S,2009.The Book of Dead Philosophers.Vintage Books.
+CROWTHER-HEYCK H,2005.Herbert A.Simon:The Bounds of Reason in Modern
+America.Johns Hopkins University Press.
+DARDEN L,1987.Viewing the History of Science as Compiled Hindsight.Al
+Magazine,8(3):13-23.
+DAUBEN J,2002.Book Review:The Universal History of Numbers and The
+Universal History of Computing (part 1),(part 2).Notices of the
+AMS,49(1/2).
+
+273
+DAVIS M,2011.Hao Wang's Contributions to Mechanized Deduction and to
+the Entscheidungs Problem//PARSONS C,LINK M (eds.).Hao Wang:Logician
+and Philosopher.College Publications:73-78.
+DAVIS M,2008.Interview with Martin Davis.Notices of the AMS,55 (5):560-
+571.
+DAVIS M,2001.The Early History of Automated Deduction//ROBINSON J
+A,VORONKOV A (eds.).Handbook of Automated Reasoning.Amsterdam.MIT
+Press:3-15.
+DAVIS M,1957.A Computer Program for Presburger's Algorithm//Summaries
+of Talks Presented at the Summer Institute for Symbolic
+Logic.Princeton,215-233.Institute for Defense Analysis.In Siekmann and
+Wrightson,41-48.
+DE BRUJIN N G,1980.A Survey of the Project Automath//SELDIN J P,HINDLEY
+J R (eds.).To H.B.Curry:Essays on Combinatory Logic,Lambda Calculus and
+Formalism.Academic Press:579-606.
+DELÉTANG G,RUOSS A,DUQUENNE P A,et al.,2023.Language Modeling is
+Compression.arXiv:2309.10668.
+DENNETT D,1997.Kinds of Minds:Toward an Understanding of
+Consciousness.Basic Books.
+DEUTSCH D,1985.Quantum Theory,the Church-Turing Principle and the
+Universal Quantum Computer.Proceedings of the Royal Society of London,A
+400:97-117.
+DEUTSCH D，1998，The Fabric of Reality：The Science of Parallel
+Universes and Its Implications.Penguin Books.（真实世界的脉络，人民邮电
+出版社，2016）
+DEUTSCH D，2011.The Beginning of Infinity：Explanations that Transform
+the World.Viking.（无穷的开始：世界进步的本源，人民邮电出版社，2016）
+DJERASSI C,1992.The Pill,Pygmy Chimps,and Degas'Horse:The Autobiography
+of Carl Djerassi.Basic Books.
+
+274
+DODGE B,1970.The Fihrist of al-Nadīm:A Tenth-Century Survey of Islamic
+Culture.Volume II.Columbia University Press.
+DORMEHL L，2017.Thinking Machines：The Quest for Artificial
+Intelligence and Where It's Taking Us Next.TarcherPerigee.（人工智能：
+改变世界，重建未来，中信出版集团，2017）
+DREYFUS H L,1965.Alchemy and Artificial Intelligence.RAND Corporation.
+DREYFUS H L，1972.What Computers Can't Do：The Limits of Artificial
+Intelligence.MIT Press.（计算机不能做什么，生活·读书·新知三联书店，
+1986）
+DREYFUS H L,1992.What Computers Still Can't Do:The Critique of
+Artificial Reason.MIT Press.
+DREYFUS H L,2001.On the Internet.Rev.2nd ed.Routledge.
+DREYFUS H L,2008.Why Heideggerian AI Failed and How Fixing It Would
+Require Making It More Heideggerian//HUSBANDS P,HOLLAND O,WHEELER M
+(eds.).The mechanical mind in history.MIT Press:331-371.
+DREYFUS H L,DREYFUS S E,1988.Making a Mind Versus Modeling the
+Brain:Artificial Intelligence Back at a Branchpoint.Daedalus,117(1):15-
+43.
+DUNHAM B,FRIDSHAL R,SWARD G L,1960.A Non-Heuristic Program for Proving
+Elementary Logical Theorems//First International Conference on
+Information Processing.Paris:Unesco House,282-285.In Siekmann and
+Wrightson,1:93-98.
+DYSON F，2008.The Scientist as Rebel.New York Review Books.（反叛的科学
+家，浙江大学出版社，2013）
+FEFERMAN S,2006.Tarski's Influence on Computer Science.Logical Methods
+in Computer Science,2(3):1-13.
+FEIGENBAUM E,FELDMAN J,1963.Computers and Thought.McGraw Hill.
+FEYNMAN R P,1982.Simulating Physics with Computers.International
+Journal of Theoretical Physics,21(6-7):467-488.
+
+275
+FEYNMAN R P,2000.Feynman Lectures on Computation.Rev.ed.HEY A J,ALLEN R
+W,eds.Westview Press.
+FISHER A W,MCKENNEY J L,1993.The Development of the ERMA Banking
+System:Lessons from History.IEEE Annals of the History of
+Computing,15(1):44-57.
+FISHER R,1930.The Genetical Theory of Natural Selection.Clarendon
+Press.
+FITTING M,1995.First-Order Logic and Automated Theorem Proving.2nd
+ed.Springer.
+FRIEDBERG R M,1958.A Learning Machine:Part 1.IBM Journal of Research
+and Development,2:2-13.
+FRIEDERICI A D,2017.Language in Our Brain:The Origins of a Uniquely
+Human Capacity.MIT Press.
+FROST R,1986.Introduction to Knowledge Base Systems.Collins
+Professional and Technical Books.
+FUCHI K,FURUKAWA K,1987.The Role of Logic Programming in the Fifth
+Generation Computer Project.New Generation Computing,5(1):3-28.
+FUKUSHIMA K,1969.Visual Feature Extraction by a Multilayered Network of
+Analog Threshold Elements.IEEE Transactions on Systems Science and
+Cybernetics,5(4):322-333.
+FUKUSHIMA K,1980.Neocognitron:A Self-organizing Neural Network Model
+for a Mechanism of Pattern Recognition Unaffected by Shift in
+Position.Biological Cybernetics,36(4):193-202.
+FURUKAWA K,1987.Fifth Generation Computer Project:Current Research
+Activity and Future Plans.TAPSOFT'87,LNCS,Springer,250:23-38.
+GALLIER J H,2003.Logic for Computer Science:Foundations of Automatic
+Theorem Proving.2nd ed.Dover Publications.
+GARDNER H,1987.The Mind's New Science:A History of the Cognitive
+Revolution.Basic Books.
+
+276
+GARNELO M,ARULKUMARAN K,SHANAHAN M,2016.Towards Deep Symbolic
+Reinforcement Learning.arXiv:1609.05518.
+GESSLER N,2013.The Computerman,the Cryptographer and the
+Physicist//COOPER S B,van LEEUWEN J (eds.).Alan Turing:his work and
+impact.Elsevier..
+GIBSON D V,ROGERS E M,1994.R&D Collaboration on Trial:The
+Microelectronics and Computer Technology Corporation.Harvard Business
+School Press.
+GILMORE P C,1960.A Proof Method for Quantification Theory:Its
+Justification and Realization.IBM Journal of Research Development,4:28-
+36.
+GOLDBERG D,1989.Genetic Algorithms in Search,Optimization and Machine
+Learning.Reading,MA:Addison-Wesley Professional.
+GOLDREICH O,2004.On Quantum Computing.
+GOODFELLOW I,BENGIO Y,COURVILLE A,2016.Deep Learning.MIT Press.
+GOTO-JONES C，2007.Modern Japan：A Very Short Introduction.Oxford
+University Press.（现代日本，译林出版社，2014）
+GRAF P,1996.Term Indexing.Springer-Verlag.
+GRAUBARD S,1988.The Artificial Intelligence Debate:False Starts,Real
+Foundations.MIT Press.
+GRAVES A,WAYNE G,DANIHELKA I,2014.Neural Turing
+Machine.arXiv:1410.5401v2[cs.NE].
+GRIBBIN J,2013.Computing with Quantum Cats:From Colossus to
+Qubits.Bantam Press.
+GROSSBERG S,1989.Review of Perceptron.AI Magazine,10(2):91.
+GROSSBERG S,2010.Towards Building a Neural Network Community.Neural
+Network,23:1135-1138.
+
+277
+GUHA R,2013.Light at the End of Tunnel.
+HADAMARD J，1954.An Essay on The Psychology of Invention in the
+Mathematical Field.Dover Publications.（数学领域中的发明心理学，江苏教
+育出版社，1988）
+HALMOS P,1985.I Want to Be a Mathematician:An Automathography.Springer.
+HARARI Y N，2016.Homo Deus：A Brief History of Tomorrow.Harvill Secker.
+（未来简史：从智人到智神，中信出版集团，2017）
+HASSABIS D,KUMARAN D,SUMMERFIELD C,et al.,2017.Neuroscience-Inspired
+Artificial Intelligence.Neuron,95(2):245-258.
+HE K,ZHANG X,REN S,et al.,2016.Deep Residual Learning for Image
+Recognition//2016 Conference on Computer Vision and Pattern
+Recognition.arXiv:1512.03385.
+HEATH D,ALLUM D,1997.The Historical Development of Computer Chess and
+Its Impact on Artificial Intelligence//AAAI Workshop:Deep Blue Versus
+Kasparov:The Significance for Artificial Intelligence.
+HEBB D O,1949.The Organization of Behavior:A Neuropsychological
+Theory.Wiley.
+HECHT-NIELSEN R,1989.Theory of the Backpropagation Neural
+Network.International Joint Conference on Neural Networks,1 (1):593-
+605.
+HENDERSON H,2007.Artificial Intelligence:Mirrors for the Mind.Chelsea
+House Publications.
+HERKEN R,1994.The Universal Turing Machine:A Half Century
+Survey.Springer-Verlag.
+HEWITT C,2009.Middle History of Logic Programming.arXiv:0904.3036.
+HINTON G E,SALAKHUTDINOV P R,2006.Reducing the Dimensionality of Data
+with Neural Networks.Science,313(5786):504-507.
+
+278
+HINTON G E,OSINDERO S,TEH Y W,2006.A Fast Learning Algorithm for Deep
+Belief Nets.Neural Computation,18(7):1527-1554.
+HOCHREITER S,SCHMIDHUBER J,1997.Long Short-term Memory.Neural
+Computation,9(8):1735-1780.
+HODGES A,1983.Alan Turing:The Enigma.Simon&Schuster.
+HODGES W,2007.Necessity in Mathematics.
+HOFFMAN L,2011.A Lifelong Learner.Communications of the ACM,54(6):128.
+HOLLAND J H,1959.Cycles in Logical Nets.PhD Thesis,University of
+Michigan.
+HOLLAND J H,1975.Adaptation in Natural and Artificial Systems:An
+Introductory Analysis with Applications to Biology,Control and
+Artificial Intelligence.1st ed.,University of Michigan Press.
+HOLLAND J H,1998.Emergence:From Chaos to Order.Addison-Wesley.
+HOLLAND J H,2008.An Interview with John Holland//HUSBANDS P,HOLLAND
+O,WHEELER M (eds.).The Mechanical Mind in History.MIT Press.
+HOLLAND J H,2014.Complexity:A Very Short Introduction.Oxford University
+Press.
+HONG H,KAPUR D,PAULE P,2006.Bruno Buchberger—A Life Devoted to
+Symbolic Computation.Journal of Symbolic Computation,41:255-258.
+HONG J W,1986.Computation:Computability,Similarity and Duality.Pitman.
+HOPFIELD J J,TANK D W,1985."Neural"Computation of Decisions in
+Optimization Problems.Biological Cybernetics,52(3):141-152.
+HOPFIELD J J,1982.Neural Networks and Physical Systems with Emergent
+Collective Computational Abilities.Proceedings of the National Academy
+of Sciences,79(8):2554-2558.
+HORGAN J,1996.The End of Science:Facing the Limits of Knowledge in the
+Twilight of the Scientific Age.Addison-Wesley.
+
+279
+HORGAN J,1993.The Death of Proof.Scientific American,269(4):92-103.
+HSU F H，2002.Behind Deep Blue：Building the Computer that Defeated the
+World Chess Champion.Princeton University Press.（“深蓝”揭秘：追寻人
+工智能圣杯之旅，上海科技教育出版社，2005）
+HUANG X,BAKER J,REDDY R,2014.A Historical Perspective of Speech
+Recognition.CACM,57(1):94-103.
+HUBEL D H,WIESEL T N,2004.Brain and Visual Perception:The Story of a
+25-Year Collaboration.Oxford University Press.
+HUSBANDS P,HOLLAND O,WHEELER M,2008.The Mechanical Mind in
+History,1(2797):128.MIT Press.
+HUTCHINS J,2005.The History of Machine Translation in A Nutshell.
+HUTTER M,2005.Universal Artificial Intelligence:Sequential Decisions
+Based on Algorithmic Probability.Springer-Verlag.
+ICOT,1988.Fifth Generation Computer Systems 1988.Springer-Verlag.
+IFRAH G,1985.From One to Zero:A Universal History of Numbers.Viking
+Penguin.
+IFRAH G,2001.The Universal History of Computing:From the Abacus to the
+Quantum Computer.Wiley.
+JACOBSEN A,2015.The Pentagon's Brain:An Uncensored History of
+DARPA.America's Top Secret Military Research Agency.Little,Brown and
+Company.
+JAIN S,OSHERSON D N,ROYER J S,et al.,1999.Systems that Learn:An
+Introduction to Learning Theory (Learning,Development,and Conceptual
+Change).2nd ed.MIT Press.
+JAMES W,1907.Pragmatism:A New Name for Some Old Ways of
+Thinking.Longmans,Green and Co.
+JOHNSON P,1988.Intellectuals:From Marx and Tolstoy to Sartre and
+Chomsky.Weidenfeld&Nicolson.
+
+280
+JUDD S,1990.Neural Network Design and the Complexity of Learning.MIT
+Press.
+JUMPER J,EVANS R,PRITZEL A,et al.,2021.Highly Accurate Protein
+Structure Prediction with AlphaFold.Nature,596(7873):583-589.
+KAKAS A C,FARIBA S,2002.Computational Logic:Logic Programming and
+Beyond.Essays in Honour of Robert A.Kowalski,Part 1.Springer.
+KALMAN J A,2001.Automated Reasoning with Otter.Rinton Press.
+KASPAROV G,2018.Deep Thinking:Where Machine Intelligence Ends and Human
+Creativity Begins.John Murray.
+KATZ Y,2012.Noam Chomsky on Where Artificial Intelligence Went
+Wrong.The Atlantic,Nov.1.
+KEMENY J G,1955.Man Viewed as a Machine.Scientific American,192(4):58-
+67.
+KNIGHT C,2018.Decoding Chomsky:Science and Revolutionary Politics.Yale
+University Press.
+KNUTH D O,BENDIX P B,1970.Simple Word Problems in Universal
+Algebras//SIEKMANN J H,WRIGHTSON G (eds.).Automation of reasoning
+2:Classical Papers on Computational Logic 1957-1966.Springer-
+Verlag:263-297.
+KNUTH D E,2001.Things a Computer Scientist Rarely Talks About.Center
+for the Study of Language and Information.
+KOLATA G,1996.A Computer Check Confirms a Proof of a Theorem"that will
+never be done again".The New York Times.
+KOLMOGOROV A N,1965.Three Approaches to the Quantitative Definition of
+Information.Problems of Information Transmission,1(1):1-7.
+KOLMOGOROV A N,1968.Logical Basis for Information Theory and
+Probability Theory.IEEE Transactions on Information Theory,14(5):662-
+664.
+
+281
+KOLMOGOROV A N,1969.On the Logical Foundations of Information Theory
+and Probability Theory.Problems of Information Transmission,5(1):1-4.
+KOLMOGOROV A N，1988.How I became a mathematician.Mitt.Math.Ges.DDR（1-
+2）：83-87.（我是怎么成为数学家的，大连理工大学出版社，2023）
+KONOPIK M,KORTEN T,LUTZ E et al.,2023.Fundamental Energy Cost of
+Finite-time Parallelizable Computing.Nature Communications,14:447.
+KORF R E,1997.Does Deep-Blue Use AI?//AAAI Workshop:Deep Blue Versus
+Kasparov:The Significance for Artificial Intelligence.
+KOWALSKI R,1986.The Limitations of Logic//Proceedings of the 1986 ACM
+Fourteenth Annual Conference on Computer Science.Association for
+Computing Machinery:152-158.
+KOWALSKI R,1988.The Early Years of Logic Programming.Communications of
+the ACM,31(1):38-43.
+KOZA J R,1990.Genetic Programming:A Paradigm for Genetically Breeding
+Populations of Computer Programs to Solve Problems,Stanford University
+Computer Science Department technical report STAN-CS-90-1314.
+KOZA J R,1992.Genetic Programming:On the Programming of Computers by
+Means of Natural Selection.MIT Press.
+KOZA J R,1994.Genetic Programming II:Automatic Discovery of Reusable
+Programs.MIT Press.
+KRUOZUMI T,1992.Overview of the 10 Years of the FGCS
+Project//Proceedings of the International Conference on Fifth
+Generation Computer Systems.Tokyo:Ohmsha:101-105.
+KUBAT M，2015.An Introduction to Machine Learning.Springer.（机器学习导
+论，机械工业出版社，2016）
+LASSEZ J L,PLOTKIN G,1991.Computational Logic:Essays in Honor of Alan
+Robinson.MIT Press.
+LE CUN Y，2019.Quand la machine apprend：La révolution des neurones
+artificiels et de l'apprentissage profond.Odile Jacob.（科学之路：人、
+
+282
+机器与未来，中信出版集团，2021）
+LE CUN Y,BENGIO Y,HINTON G,2015.Deep Learning.Nature,521(7553):436-444.
+LE CUN,Y,BENGIO Y,1995.Convolutional Networks for Images,Speech,and
+Time Series//ARBIB M A (ed.).The Handbook of Brain Theory and Neural
+Networks.2nd ed.MIT Press:255-258.
+LEDERBERG J,1987.How DENDRAL was Conceived and Born//BLUM B I
+(ed.).Proceedings of the ACM Conference on History of Medical
+Informatics:5-19.
+LENAT D B,GUHA R V,1989.Building Large Knowledge-Based
+Systems:Representation and Inference in the Cyc Project.Addison-Wesley.
+LEVIN L,1973.Universal Search Problems.Problems of Information
+Transmission,9(3):115-116.
+LEVIN L,1986.Average Case Complete Problems.SIAM Journal on
+Computing,15(1):285-286.
+LI M,VITANYI P,2019.An Introduction to Kolmogorov Complexity and Its
+Applications.4th ed.Springer.
+LI M,VITANYI P M B,TUNG L H,et al.,2023.A Theory of Human-Like Few-Shot
+Learning.arXiv:2301.01047.
+LI M,2024.Approximating Human-Like Few-Shot Learning with GPT-based
+Compression.arXiv:2308.06942.
+LINDSAY R K,BUCHANAN B G,FEIGENBAUM E A,et al.,1993.DENDRAL:A Case
+Study of the First Expert System for Scientific Hypothesis
+Formation.Artificial Intelligence,61:209.
+LINNAINMAA S,1970.The Representation of the Cumulative Rounding Error
+of an Algorithm as a Taylor Expansion of the Local Rounding
+Errors.Master's Thesis (in Finnish),University of Helsinki.
+LIVNAT A,PAPADIMITRIOU C,2016.Sex as an Algorithm:The Theory of
+Evolution Under the Lens of Computation.Communications of the
+ACM,59(11):84-93.
+
+283
+LOOS S,IRVING G,SZEGEDY C,et al.,2017.Deep Network Guided Proof
+Search.arXiv:1701.06972v1[cs.AI].
+LOVELAND D W,1978.Automated Theorem Proving:A Logical Basis.North
+Holland.
+LUNGARELLA M,IIDA F,PFEIFER R,et al.,2007.50 Years of Artificial
+Intelligence:Essays Dedicated to the 50th Anniversary of Artificial
+Intelligence.Springer.
+MACHLUP F,MANSFIELD U,1983.The Study of Information:Interdisciplinary
+Messages.John Wiley.
+MACRAE N,1999.John von Neumann:The Scientific Genius Who Pioneered the
+Modern Computer,Game Theory,Nuclear Deterrence,and Much More.2nd
+ed.American Mathematical Society.
+MARR D,1982.Vision:A Computational Approach.Freeman&Co..
+McCARTHY J,SHANNON C E (eds.),1956.Automata Studies.Princeton
+University Press.
+McCARTHY J,1979.History of LISP.
+McCARTHY J,1988.Mathematical Logic in Artificial Intelligence//The
+Artifical Intelligence Debate:False Starts,Real Foundations.MIT
+Press:297-311.
+McCARTHY J,1989.Oral History Interview with John McCarthy.Charles
+Babbage Institute.
+McCARTHY J,HAYES P J,1969.Some Philosophical Problems from the
+Standpoint of Artificial Intelligence//MELTZER B,MICHIE D
+(eds.).Machine Intelligence 4.Edinburgh University Press:463-502.
+McCARTHY J,MINSKY M L,ROCHESTER N,et al.,1955.A Proposal for the
+Dartmouth Summer Research Project on Artificial Intelligence,August 31.
+McCARTHY J,2005.Science Lives,Interview at Simons Foundation.
+
+284
+McCORDUCK P,1979.Machines Who Think:A Personal Inquiry into the History
+and Prospects of Artificial Intelligence.Freeman and Company.
+McCORDUCK P,FEIGENBAUM E,1984.The Fifth Generation:Artificial
+Intelligence and Japan's Computer Challenge to the World.2nd ed.Addison
+Wesley.
+McCORDUCK P,2019.This Could Be Important:My Life and Times with the
+Artificial Intelligentsia.Lulu Press.
+McCULLOCH W S,PITTS W,1943.A Logical Calculus of the Ideas Immanent in
+Nervous Activity.The Bulletin of Mathematical Biophysics,5(4):115-133.
+METZ C，2021.The Genius Makers：Google，Facebook，Elon Musk，and the
+Race to Artificial Intelligence.Random House Business Books.（深度学习
+革命，中信出版集团，2023）
+MIKOLOV T,SUTSKEVER I,CHEN K,et al.,2013.Distributed Representations of
+Words and Phrases and their Compositionality.arXiv:1310.4546.
+MILBURN G,1999.The Feynman Processor:Quantum Entanglement and the
+Computing Revolution.Basic Books.
+MILLER G A,2003.The Cognitive Revolution:A Historical
+Perspective.Trends in Cognitive Sciences,7(3):141-144.
+MINSKY M L,1974.A Framework for Representing Knowledge.MIT AI Lab Memo
+306.
+MINSKY M L,1989.Oral History Interview with Marvin Minsky.Charles
+Babbage Institute.
+MINSKY M L,PAPERT S A,1969.Perceptrons:An Introduction to Computational
+Geometry.MIT Press.
+MIRHOSEINI A,PHAM H,LE Q V,et al.,2017.Device Placement Optimization
+with Reinforcement Learning.arXiv:1706.04972[cs.LG].
+MIRHOSEINI A,GOLDIE A,YAZGAN M,et al.,2021.A Graph Placement
+Methodology for Fast Chip Design.Nature,594(7862):207-212.
+
+285
+MIRHOSEINI A,GOLDIE A,YAZGAN M,et al.,2022.Author Correction:A Graph
+Placement Methodology for Fast Chip Design.Nature,604(7906):E24.
+MIRHOSEINI A,GOLDIE A,YAZGAN M,et al.,2024.Addendum:A Graph Placement
+Methodology for Fast Chip Design.Nature,634(8034):E10-E11.
+MIT,2011.MIT 150 Symposia on Brains,Minds and Machines.
+MITCHELL M，2009.Complexity：A Guided Tour.Oxford University Press.（复
+杂，湖南科学技术出版社，2011）
+MOSES J,2012.Macsyma:A Personal History.Journal of Symbolic
+Computation,47(2):123-130.
+MOTO-OKA T,1982.Fifth Generation Computer Systems.North-Holland.
+NERODE A,SHORE R A,1997.Logic for Applications.2nd ed.Springer.
+NEWBORN M,1975.Computer Chess.Academic Press.
+NEWBORN M,2002.Deep Blue:An Artificial Intelligence Milestone.Springer.
+NEWELL A,1983.Intellectual Issues in the History of Artificial
+Intelligence//MACHLOUP F,MANSFIELD U (eds.).The Study of
+Information:Interdisciplinary Messages.John Wiley&Sons:187-227.
+NEWELL A,1991.Oral History Interview with Alan Newell.Charles Babbage
+Institute.
+NIELSEN M，2015.Neural Networks and Deep Learning.（深入浅出神经网络与
+深度学习，人民邮电出版社，2020）
+NILSSON N J,1989.Oral History Interview with Nils J.Nilsson.Charles
+Babbage Institute.
+NILSSON N J,2010.The Quest for Artificial Intelligence:A History of
+Ideas and Achievements.Cambridge University Press.
+NIPKOW T,PAULSON L C,WENZEL W,2002.Isabelle/HOL:A Proof Assistant for
+Higher-Order Logic.Springer.
+
+286
+OVERBEEK R,LUSK E,1997.Wos and Automated Deduction at ANL:The
+Ethos//VEROFF R,PIEPER G W (eds.).Automated Reasoning and Its
+Applications:Essays in Honor of Larry Wos.MIT Press.
+PEIRCE C S,1877.The Fixation of Belief.Popular Science Monthly,12(1):1-
+15.
+PENROSE R，1989.The Emperor's New Mind：Concerning Computers，Minds and
+The Laws of Physics.Oxford University Press.（皇帝新脑，湖南科学技术出
+版社，2007）
+PÉTER R，1951.Rekursive Funktionen.Akadémiai Kiadó.（递归函数论，科学出
+版社，1958）
+PETZOLD C，2008.The Annotated Turing：A Guided Tour Through Alan
+Turing's Historic Paper on Computability and the Turing Machine.John
+Wiley&Sons.（图灵的秘密：他的生平、思想及论文解读，人民邮电出版社，
+2012）
+PINKER S,1997.How the Mind Works.W.W.Norton&Company.
+PLAISTED D A,2015.History and Prospects for First-Order Automated
+Deduction.CADE-25,Lecture Notes in Computer Science,9195:3-28.
+POUNDSTONE W，1992.Prisoner's Dilemma：John von Neumann，Game Theory，
+and the Puzzle of the Bomb.Oxford University Press.（囚徒的困境：冯·诺
+依曼、博弈论和原子弹子之谜，中信出版集团，2015）
+PRAWITZ D,PRAWITZ H,VOGHERA N,1960.A Mechanical Proof Procedure and Its
+Realization in An Electronic Computer.Journal of the ACM,7(2):102-128.
+PUTNAM H，1981.Reason，Truth，and History.Cambridge University Press.
+（理性、真理与历史，上海译文出版社，1997）
+QUINE W V,1955.A Proof Procedure for Quantification Theory.Journal of
+Symbolic Logic,20(2):141-149.
+QUINE W V,1981.Theories and Things.Harvard University Press.
+REDDY R,1991.Oral History Interview with Raj Reddy.Charles Babbage
+Institute.
+
+287
+REEKE G N,EDELMAN G M,1988.Real Brain and Artificial
+Intelligence.Daedalus,117(1):143-173.
+RIAZANOV A,2002.The Design and Implementation of VAMPIRE.University of
+Manchester.
+ROBINSON J A,1965.A Machine-Oriented Logic Based on the Resolution
+Principle.Journal of ACM,12:23-41.
+ROBINSON J A,1992.Logic and Logic Programming.CACM,35(3):40-65.
+ROBINSON J A,Voronkov A,2001.Handbook of Automated Reasoning (in 2
+volumes).Elsevier&MIT Press.
+ROSENBLATT F,1958.The Perceptron:A Probabilistic Model for Information
+Storage and Organization in the Brain.Psychological Review,65(6):386.
+RUDOLPH S,2011.Foundations of Description Logics//POLLERES A,d'AMATO
+C,ARENAS M,et al.(eds.).Reasoning Web:Semantic Technologies for the Web
+of Data.Springer:76-136.
+RUELLE D,2007.The Mathematician's Brain:A Personal Tour Through the
+Essentials of Mathematics and Some of the Great Minds Behind
+Them.Princeton University Press.
+RUELLE D,2013.Post-Human Mathematics.arXiv:1308.4678.
+RUMELHART D E,HINTON G E,WILLIAMS R J,1986.Learning Representations by
+Backpropagating Errors.Nature,323(6088):533-536.
+RUMELHART D E,MCCLELLAND J L,PDP RESEARCH GROUP,1986.Parallel
+Distributed Processing:Explorations in the Microstructure of
+Cognition.Vol 1:Foundations,Vol 2:Psychological and Biological
+Models.MIT Press.
+RUSSELL S,NORVIG P,2010.Artificial Intelligence:A Modern Approach.3rd
+ed.Prentice Hall.
+SAMUEL A L,1960.Programming Computers to Play Games.Advances in
+Computers,1:165-192.
+
+288
+SAMUEL A L,1959.Some Studies in Machine Learning Using the Game Of
+Checkers.IBM Journal of Research and Development,3(3):210-229.
+SAUTOY M D,2019.The Creativity Code:Art and Innovation in the Age of
+AI.The Belknap Press of Harvard University Press.
+SCHAEFFER J,BURCH N,BJÖRNSSON Y,et al.,2007.Checkers Is
+Solved.Science,317(5844):1518-1522.
+SCHMIDHUBER J,2022.Annotated History of Modern AI and Deep
+Learning.arXiv:2212.11279.
+SEJNOWSKI T，2018.The Deep Learning Revolution.MIT Press.（深度学习，中
+信出版集团，2019）
+SEJNOWSKI T,2020.The Unreasonable Effectiveness of Deep Learning in
+Artificial Intelligence.Proceedings of the National Academy of
+Sciences,117(48):30033-30038.
+SERGOT M J,2002.Bob Kowalski:A Portrait.Lecture Notes in Computer
+Science,2407:5-25.
+SHANNON C E,1950.A Chess Playing Machine.Scientific American,182(2):48-
+51.
+SHANNON C E,1950.Programming a Computer for Playing Chess.Philosophical
+Magazine,41(314):256-275.
+SHANNON C E,MCCARTHY J,1956.Automata Studies.Princeton University
+Press.
+SHAPIRO E,1987.Concurrent Prolog:Collected Papers.MIT Press.
+SHASHA D E,LAZERE C,1998.Out of their Minds:The Lives and Discoveries
+of 15 Great Computer Scientists.Copernicus.
+SHASHA D E，LAZERE C，2010.Natural Computing：DNA，Quantum Bits，and
+the Future of Smart Machines.W.W.Norton&Company.（自然计算：DNA、量子比
+特和智能机器的未来，人民邮电出版社，2014）
+
+289
+SHAW D E,1981.NON-VON:A Parallel Machine Architecture for Knowledge-
+Based Information Processing.
+SIEGELMANN H T,1999.Neural Networks and Analog Computation:Beyond the
+Turing Limit (Progress in Theoretical Computer Science).
+SIEKMANN J,WRIGHTSON G (eds.),1983.Automation of Reasoning 1:Classical
+Papers on Computational Logic 1957—1966.Springer-Verlag Berlin
+Heidelberg New York.
+SIEKMANN J,WRIGHTSON G (eds.),1983.Automation of Reasoning 2:Classical
+Papers on Computational Logic 1967—1970.Springer-Verlag Berlin
+Heidelberg New York.
+SILVER D,HUANG A,MADDISON C J,et al.,2016.Mastering the Game of Go with
+Deep Neural Networks and Tree Search.Nature,529 (7587):484-489.
+SIMON H A,1996.The Sciences of Artificial.3rd ed.MIT Press.
+SIMON H A,MUNAKATA T,1997.AI Lessons.CACM,40(8):23-25.
+SIMON H A,1996.Models of My Life.MIT Press.
+SIPSER M,2012.Introduction to the Theory of Computation.3rd ed.Cengage
+Learning.
+SMILEY J，2010.The Man Who Invented the Computer：The Biography of John
+Atanasoff，Digital Pioneer.Doubleday.（最强大脑：数字时代的前世今生，新
+世界出版社，2015）
+SMITH S W,2005.Turing Is from Mars,Shannon Is from Venus:Computer
+Science and Computer.IEEE Security&Privacy,3(2):66-69.
+SOLOMON R,2001,A Brief History of the Classification of the Finite
+Simple Groups.Bulletin(New Series) of the American Mathematical
+Society,38(3):315-352.
+SOLOMONOFF G,2011.Ray Solomonoff and the Dartmouth Summer Research
+Project in Artificial Intelligence,1956.
+
+290
+SOLOMONOFF R J,1956.An Inductive Inference Machine.Report circulated at
+the Dartmouth Summer Workshop on Artificial Intelligence,August 1956.
+SOLOMONOFF R J,1957.An Inductive Inference Machine//IRE Convention
+Record,Section on Information Theory,Part 2.Institute of Radio
+Engineers:56-62.
+SOLOMONOFF R J,1960.A Preliminary Report on a General Theory of
+Inductive Inference (Revision of Report V-131).Report ZTB-138,Zator
+Company.
+SOLOMONOFF R J,1964.A Formal Theory of Inductive Inference.Part
+I.Information and Control,7(1):1-22.
+SOLOMONOFF R J,1964.A Formal Theory of Inductive Inference.Part
+II.Information and Control,7(2):224-254.
+SOLOMONOFF R J,1978.Complexity-Based Induction Systems:Comparisons and
+Convergence Theorems.IEEE Transactions on Information Theory,24(4):422-
+432.
+SOLOMONOFF R J,1984.Optimum Sequential Search.Oxbridge Research
+Report,revised 1985.
+SOLOMONOFF R J,1997.The Discovery of Algorithmic Probability.Journal of
+Computer and System Sciences,55(1):73-88.
+SOLOMONOFF R J,2010.Algorithmic Probability,Heuristic Programming and
+AGI//Proceedings of the 3d Conference on Artificial General
+Intelligence.
+SOLOMONOFF R J,2011.Algorithmic Probability:Its Discovery,its
+Properties and Application to Strong AI//ZENIL H (ed.).Randomness
+Through Computation:Some Answers,More Questions,Chapter 11:149-157.
+SONI J,GOODMAN R,2017.A Mind at Play:How Claude Shannon Invented the
+Information Age.Simon&Schuster.
+SOWA J,1993.Book Review of Building Large Knowledge-Based
+Systems:Representation and Inference in the Cyc Project.Artificial
+
+291
+Intelligence,61:95-104.
+SPERLICH W B，2006.Noam Chomsky.Reaktion Books.（乔姆斯基，北京大学出版
+社，2010）
+SPICER D,TASHEV K,2006.The Quest to Build a Thinking Machine:A History
+of Computer Chess.Computer History Museum.
+STANDAGE T,2002.The Turk:The Life and Times of the Famous Eighteenth-
+Century Chess-Playing Machine.Walker&Co.
+SUTCLIFFE G,SUTTNER C,The TPTP Problem Library for Automated Theorem
+Proving.
+SUTSKEVER I,VINYALS O,LE Q V,2014.Sequence to Sequence Learning with
+Neural Networks//GHARAMANI Z,WELLING M,CORTES C,et al.(eds.).Advances
+in neural information processing systems 27 (NIPS 2014).Red
+Hook,N.Y.:Curran Associates:3104-3112.
+SUTSKEVER I,2023.An Observation on Generalization.Simons Institute for
+the Theory of Computing,2023-08-14.
+SUTTON R S,BARTO A G,1998.Reinforcement Learning:An Introduction.MIT
+Press.
+SUTTON R S,BARTO A G,2018.Reinforcement Learning:An Introduction.2nd
+ed.MIT Press.
+TARSKI A,1948.A Decision Method for Elementary Algebra and
+Geometry.RAND Corporation.
+TEGMARK M,2017.Life 3.0:Being Human in the Age of Artificial
+Intelligence.Alfred A.Knopf.
+TSITSIKLIS J,2019.The Shades of Reinforcement Learning.Simons
+Institute,2019-10-08.
+TURING A M,1953.Digital Computers Applied to Games//BOWDEN B V
+(ed.).Faster than Thought:A Symposium on Digital Computing
+Machines.Pitman.
+
+292
+TURING A M,1936.On Computable Numbers,with an Application to the
+Entscheidungs Problem.Proceedings of the London Mathematical
+Society,s2-42:230-265.
+TURING A M,1937.Computability andλ-Definability.The Journal of
+Symbolic Logic,2(4):153-163.
+TURING A M,1947.Lecture to the London Mathematical Society on 20
+February 1947//COOPER S B,van LEEUWEN J.Alan Turing:His Work and
+Impact.Elsevier:481-497.
+TURING A M,1948.Intelligent Machinery.National Physical
+Laboratory,Teddington//MELTZER B,MICHIE D (eds.),Machine
+Intelligence.Edinburgh:Edinburgh University Press,1969:3-23.
+TURING A M,1950.Computing Machinery and Intelligence.Mind,59(236):433-
+460.
+TURING A M,1953.Digital Computers Applied To Games//BOWDEN B V
+(ed.).Faster than Thought:A Symposium on Digital Computing
+Machines.Pitman:286-310.
+TYMOCZKO T,1979.The Four-Color Problem and Its Philosophical
+Significance.Journal of Philosophy,76(2):57-83.
+VALIANT L G,1984.A Theory of Learnable.CACM,27(11):1134-1142.
+VALIANT L G,1994.Circuits of Mind.Oxford University Press.
+VALIANT L G,2000.Robust Logics.Artificial Intelligence
+Journal,117(2000):231-253.
+VALIANT L,2013.Probably Approximately Correct:Nature's Algorithms for
+Learning and Prospering in a Complex World.Basic Books.
+VEROFF R,1997.Automated Reasoning and Its Applications:Essays in Honor
+of Larry Wos.MIT Press.
+VASWANI A,SHAZEER N,PARMAR N,et al.,2017.Attention Is All You
+Need[C]//GUYON I,VON LUXBURG U,BENGIO S,et al.(eds.).Advances in Neural
+
+293
+Information Processing Systems 30(NIPS 2017).Red Hook,N.Y.:Curran
+Associates:5998-6008.
+VITANYI P M B,1988.A Short Biography of A.N.Kolmogorov.CWI
+Quarterly,1:3-18.
+VITANYI P M B,2010.Ray Solomonoff,Founding Father of Algorithmic
+Information Theory.Algorithms,3(3):260-264.
+VON HUMBOLDT W,1988.On Language:The Diversity of Human Language-
+Structure and Its Influence on the Mental Development of
+Mankind.Cambridge University Press.
+VON NEUMANN J,1948.The General and Logical Theory of
+Automata//JEFFERESS L A (ed.).Cerebral Mechanisms in Behavior:The Hixon
+Symposium.John Wiley&Sons:1-41.
+VON NEUMANN J，2012.The Computer and the Brain.3rd ed.Yale University
+Press.（计算机与人脑，商务印书馆，2022）
+WANG H,1960.Proving Theorems by Pattern Recognition I.Communications of
+ACM,3(4):220-234.
+WANG H,1960.Toward Mechanical Mathematics.IBM Journal of Research and
+Development,4(1):2-22.
+WANG H,1960.Proving Theorems by Pattern Recognition—II.The Bell System
+Technical Journal,40(1):1-41.
+WANG H,1978.Private Communication with Wu Wen-tsun.April 10.
+WANG H，1981.Popular Lectures on Mathematical Logic.Physics Today，34
+（9）：82.（数理逻辑通俗讲话，科学出版社，1983）
+WANG H,1984.Computer Theorem Proving and Artificial
+Intelligence.Reprint in Computation,Logic and Philosophy,A Collection
+of Essays.1990,originally in Contemporary Mathematics.AMS.
+WANG H,RAJ B,2017.On the Origin of Deep
+Learning.arXiv:1702.07800v4[cs.LG].
+
+294
+WARREN D H D,1982.A View of the Fifth Generation and Its Impact.AI
+Magazine,3(4):33-38.
+WATKINS C,1989.Learning from Delayed Rewards.Cambridge University.
+WEINBERG S,2005.Physics and History.Daedalus,134(4):31-39.
+WEIZENBAUM J,1966.ELIZA—A Computer Program for the Study of Natural
+Language Communication Between Man and Machine.Communications of the
+ACM,9(1):36-45.
+WEIZENBAUM J,1976.Computer Power and Human Reason:From Judgement to
+Calculation.W.H.Freeman and Company.
+Werbos P J,1974.Beyond Regression:New Tools for Prediction and Analysis
+in the Behavioral Science.Harvard University.
+WERBOS P J,1981.Applications of Advances in Nonlinear Sensitivity
+Analysis//Proceedings of the 10th IFIP Conference,August 31-September
+4,SPRINGER:762-770.
+WERBOS P J,1990.Backpropagation Through Time:What It Does and How To Do
+It.Proceedings of the IEEE,78(10):1550-1560.
+WHEELER J A,1994.At Home in the Universe.American Institute of Physics.
+WIDROW B,2013.Oral History of Bernard Widrow.Computer History Museum.
+WIENER N,1964.I Am a Mathematician.MIT Press.
+WIENER N,2019.Cybernetics:or Control and Communication in the Animal
+and the Machine.2nd ed.MIT Press.
+WINOGRAD T,1972.Understanding Natural Language.Academic Press.
+WINOGRAD T,1982.Language as A Cognitive
+Process.Vol.1:Syntax.Reading,MA:Addison-Wesley Pub.Co.
+WINOGRAD T,1991.Oral History Interview with Terry Allen
+Winograd.Charles Babbage Institute.
+
+295
+WINOGRAD T,FLORES F,1986.Understanding Computers and Cognition:A New
+Foundation for Design.Ablex Publishing Corporation.
+WINSTON P H,1990.Oral History Interview with Patrick H.Winston.Charles
+Babbage Institute.
+WITTGENSTEIN L,1953.Philosophical Investigations.Blackwell.
+WOLFRAM S,2002.A New Kind of Science.Artificial Life,55(7):55-56.
+WOLFRAM S,2017.Idea Makers:Personal Perspectives on the Lives and Ideas
+of Some Notable People.Wolfram Media.
+WOS L,HENSCHEN L,1983.Automated Theorem Proving 1965—1970.Symbolic
+Computation,14(92):1-24.
+WOS L,OVERBECK R,LUSK E,1991.Subsumption,a Sometimes Undervalued
+Procedure//LASSEZ J L,PLOTKIN G (eds.).Computational Logic:Essays in
+Honor of Alan Robinson.MIT Press:3-40.
+WOS L,OVERBECK R,LUSK E,et al.,1983.Automated Reasoning:Introduction
+and Applications.McGraw-Hill.
+WOS L,2013.The Legacy of a Great Researcher//BONACINA M P,STICKEL M E
+(eds.).Automated Reasoning and Mathematics:Essays in Memory of William
+W.McCune.Springer:1-14.
+WRIGHT R,1988.Three Scientists and Their Gods.Times Books.
+WU W T,2001.Mathematics Mechanization.Science Press and Kluwer Academic
+Publishers.
+WU Y,Schuster M,Chen Z,et al.,2016.Google's Neural Machine Translation
+System:Bridging the Gap between Human and Machine Translation.Technical
+Report.
+WUPPULURI S,DORIA F A,2020.Unravelling Complexity:The Life and Work of
+Gregory Chaitin.World Scientific Publishing Company.
+YAO A C C,2003.Classical Physics and the Church—Turing Thesis.Journal
+of the ACM,50(1):100-105.
+
+296
+YOURGRAU P，2005.A World Without Time：The Forgotten Legacy of Godel
+and Eistein.Basic Books.（没有时间的世界：爱因斯坦与歌德尔被遗忘的财
+富，电子工业出版社，2013）
+YUKOTA K,1994.From Databases to Knowledge-Bases.Proceedings of FGCS
+1994.ICOT,Tokyo.
+ZHANG N,1992.Complexity of Neural Network Learning in the Real Number
+Model//Proceedings of the Workshop on Physics and Computation
+(PhysComp'92).IEEE Computer Society Press:146-150.
+ZHANG N，2022.Moore's Law is Dead，Long Live Moore's Law！arXiv：
+2205.15011.（尼克，摩尔定律死了，摩尔定律万岁！.中国计算机学会通讯，
+2022，18（5）：2-8）
+冯志伟，2008.计算语言学基础，商务印书馆.
+刘知远，周界，2021.图神经网络导论，人民邮电出版社.
+刘卓军，2018.吴文俊与吴文俊人工智能奖，科学网博客.
+穆萨·穆萨威，1986.阿拉伯哲学，商务印书馆.
+尼克，2014.哲学评书，浙江大学出版社.
+尼克，2024.理解图灵，人民邮电出版社.
+吴文俊，1984.几何定理机器证明的基本原理，科学出版社.
+吴文俊，2003.数学机械化，科学出版社.
+吴文俊，2015.走自己的路：吴文俊口述自传，湖南教育出版社.
+政协齐河县文史资料委员会，2000.齐河文史资料（第六辑）：科学巨匠王浩.
+周志华，2016.机器学习，清华大学出版社.
+
+297
+人名对照
+A
+阿比卜 Michael Arbib
+阿达玛 Jacques Solomon Hadamard 阿尔诺 Antoine Arnauld
+阿克曼 Wilhelm Ackermann
+阿伦森 Scott Aaronson
+阿诺德 Vladimir Arnold
+阿佩尔 Kenneth Appel
+阿什比 Ross Ashby
+埃德尔曼 Gerald Edelman
+埃尔布朗 Jacques Herbrand
+埃克特 John Presper Eckert 艾伦 Mary Ellen
+爱波斯坦 David Epstein
+爱因斯坦 Albert Einstein
+安德鲁斯 Peter B.Andrews
+安德森 Marc Andreessen
+奥克利 Brian Oakley
+奥斯丁 John Langshaw Austin 奥威尔 George Orwell
+B
+
+298
+巴德尔 Franz Baader
+巴克斯 John Warner Backus
+巴罗 Harry Barrow
+巴托 Andrew Barto
+巴扎德 Kevin Buzzard
+白贝尔 Wolfgang Bibel
+保尔森 Lawrence C.Paulson
+鲍林 Linus Pauling
+邦迪 Alan Bundy
+贝尔曼 Richard E.Bellman
+贝尔纳 John D.Bernal
+贝里克 Robert Berwick
+贝特 Hans Bethe
+本迪克斯 Peter Bendix
+本吉奥 Yoshua Bengio
+本内特 Charles Bennett
+比雷 Armin Biere
+比森 Michael Beeson
+比约纳 Nikolaj Bjørner
+波尔 Robert S.Boyer
+波拉尼 Michael Polanyi
+波利亚 George Polya
+
+299
+波焦 Tomaso Poggio
+波普尔 Karl Popper
+波普尔斯通 Robin Popplestone 伯恩斯坦 Alex Bernstein
+伯克霍夫 George David Birkhoff 伯克斯 Authur Burks
+伯林 Isaiah Berlin
+伯纳斯-李 Tim Berners-Lee
+伯奈斯 Paul Bernays
+柏林纳 Hans Berliner
+博尔赫斯 Jorge Luis Borges
+博克斯 George Box
+博雷尔 Émile Borel
+博斯特罗姆 Nick Bostrom
+布赫伯格 Bruno Buchberger
+布坎南 Bruce Buchanan
+布莱克 Archie Blake
+布莱森 Bill Bryson
+布莱索 Woody Bledsoe
+布里渊 Léon Brillouin
+布林 Sergey Brin
+布卢姆 Manuel Blum
+布卢姆 Avrim Blum
+布卢姆 Lenore Blum
+
+300
+布鲁克斯 Rodney Brooks
+布什 Vannevar Bush
+C
+蔡汀 Gregory Chaitin
+查尼亚克 Eugene Charniak
+查普曼 John Chapman
+D
+戴森 Freeman Dyson
+戴维斯 Martin Davis
+丹尼特 Daniel Dennett
+道本 Joseph Dauben
+道金斯 Richard Dawkins
+德布罗金 Nicolaas Govert de Bruijn 德雷弗斯 Hubert Dreyfus
+德雷弗斯 Stuart Dreyfus
+德施维茨 Nachum Dershowitz
+迪恩 Jeff Dean
+蒂莫茨科 Thomas Tymoczko
+丢东聂 Jean Alexandre Eugène Dieudonné
+迪杰斯特拉 Edsger Wybe Dijkstra 翟若适 Carl Djerassi
+杜彻斯内 Ricardo Duchesne
+
+301
+多明戈斯 Pedro Domingos
+多依奇 David Deutsch
+E
+厄埃 Gérard Huet
+厄内斯特 Les Earnest
+厄特格夫 Paul Utgoff
+鄂多什 Paul Erdőos F
+法拉比 Al-Farabi
+菲尔德曼 Julian Feldman
+菲舍尔 Bobby Fischer
+菲亭 Melvin Fitting
+费得莲科 Evelina Fedorenko
+费弗曼 Solomon Feferman
+费根鲍姆 Edward Albert Feigenbaum 费马 Pierre de Fermat
+费曼 Richard Phillips Feynman 费米 Enrico Fermi
+费舍 Ronald Fisher
+冯诺伊曼 John von Neumann
+弗兰肯斯坦 Frankenstein
+弗雷德伯格 R.M.Friedberg
+弗雷德金 Edward Fredkin
+弗里德里希 Angela Friederici 弗里格 Gottlob Frege
+
+302
+弗洛雷斯 Fernando Flores
+伏尼契 Ethel Lilian Voynich 福吉 Charles Forgy
+福柯 Michel Foucault
+G
+甘金格 Harald Ganzinger
+高德纳 Donald Ervin Knuth
+哥德尔 Kurt Gödel
+格兰特 Herb Gelernter
+格雷厄姆 Ron Graham
+格雷戈里 Steve Gregory
+格林 Cordell Green
+格林布拉特 Richard Greenblatt 格鲁彭 Rod Grupen
+格鲁什科 Robert Glushko
+格罗斯伯格 Stephen Grossberg 根岑 Gerhard Gentzen
+古德 Irving John Good
+古德 Jack Good
+古德曼 Nelson Goodman
+古德瑞克 Oded Goldreich
+古德斯丁 Herman Goldstine
+古哈 Ramanathan V.Guha
+郭士纳 Lou Gerstner
+
+303
+H
+哈尔莫斯 Paul Halmos
+哈尔西 William Halsey
+哈肯 Wolfgang Haken
+哈里德 David Halliday
+哈里斯 Zellig Harris
+哈利 Morris Halle
+哈密尔顿 William Hamilton
+哈萨比斯 Demis Hassabis
+哈特利 Ralph Hartley
+海德格尔 Martin Heidegger
+海尔梅尔 George Heilmeirer
+海思 Patrick Hayes
+韩丁 William Hinton
+寒春 Joan Hinton
+汉明 Richard Hamming
+汉森 Allen Hanson
+赫布 Donald Hebb
+赫克-尼尔森 Robert Hecht-Nielsen 赫拉利 Yuval Harari
+亨培尔 Carl Hempel
+亨廷顿 Samuel Huntington
+洪堡 William Humboldt
+
+304
+胡贝尔 David Hubel
+胡塞尔 Edmund Husserl
+胡特尔 Marcus Hutter
+怀尔斯 Andrew Wiles
+怀特海 Alfred North Whitehead 惠勒 John A.Wheeler
+霍根 John Horgan
+霍克瑞特 Sepp Hochreiter
+霍兰德 John Holland
+霍珀 Grace Murray Hopper
+霍普菲尔德 John Hopfield
+霍奇斯 Andrew Hodges
+霍奇斯 Wilfrid Hodges
+霍维茨 Eric Horvitz
+J
+吉尔莫 Paul Gilmore
+吉内塞雷斯 Michael Genesereth 加雷 Michael R.Garey
+贾德 Steve Judd
+贾里尼克 Frederick Jelinek
+江珀 John Jumper
+杰洛姆 Jean-Léon Gérôme
+金斯伯格 Matt Ginsberg
+K
+
+305
+卡尔纳普 Rudolf Carnap
+卡尔森 Magnus Carlsen
+卡汉 Jean-Pierre Kahane
+卡门 Theodore von Kármán
+卡普 Richard Karp
+卡普尔 Deepak Kapur
+卡斯帕罗夫 Garry Kasparov
+卡亚姆 Umar Khayyam
+凯克 Mark Kac
+坎德尔 Eric Kandel
+坎尼 John Canny
+坎普尔 Murray Campbell
+康斯特波 Robert L.Constable 康韦 John Conway
+考夫曼 Matt Kaufman
+柯尔莫哥洛夫 Andrey Nikolaevich Kolmogorov
+柯里 Haskell Curry
+科恩 Paul Cohen
+科尔比 Kenneth Colby
+科夫 Rich Korf
+科林斯 George E.Collins
+科莫饶尔 Alain Colmerauer
+科瓦尔斯基 Robert Kowalski
+
+306
+科沃 Thomas M.Cover
+克拉克 Edmund M.Clarke
+克拉克 Jim Clark
+克拉克 Keith Clark
+克劳福 Harry Klopf
+克劳普夫 Harry Klopf
+克劳斯 Lawrence M.Krauss
+克里克 Francis Crick
+克里尼 Stephen Kleene
+克里普克 Saul Aaron Kripke
+克里切利 Simon Critchley
+克里泽夫斯基 Alex Krizhevsky
+克门尼 John Kemeny
+克柔克 Steve Crocker
+肯佩伦 Wolfgang von Kempelen 寇克 John Cocke
+寇普兰 Jack Copeland
+寇扎 John Koza
+库布里克 Stanley Kubrick
+库恩 Thomas Sammual Kuhn
+库克 Stephen Arthur Cook
+库兹韦尔 Ray Kurzweil
+蒯因 Willard Van Orman Quine
+
+307
+L
+拉宾 Michael O.Rabin
+拉希德 Rick Rashid
+莱德伯格 Joshua Lederberg
+莱夫谢茨 Solomon Lefschetz
+莱莫因 Blake Lemoine
+莱瑟 Victor Lesser
+莱斯曼 Edward Riseman
+朗道 Lev Davidovich Landau 朗道尔 Rolf Landauer
+雷蒂 Raj Reddy
+雷纳特 Douglas Lenat
+雷娜特 Wendy Lehnert
+李维斯特 Ronald L.Rivest
+里克 George Reeke
+利夫纳特 Adi Livnat
+利克莱德 Joseph Licklider
+梁赞诺夫 Andrei Riazanov
+列维 David Levy
+列文 Leonid Levin
+林纳因马 Linnaimmma
+卢梭 Phillipe Roussel
+
+308
+鲁梅尔哈特 David Rumelhart
+罗宾斯 Herbert Robbins
+罗宾逊 Abraham Robinson
+罗宾逊 George Robinson
+罗宾逊 John Alan Robinson
+罗切斯特 Nathaniel Rochester 罗森布拉特 Frank Rosenblatt
+罗森布吕特 Arturo Rosenblueth 罗素 Bertrand Russell
+罗素 Stuart Russell
+罗塔 Gian-Carlo Rota
+洛夫兰 Donald W.Loveland
+吕埃勒 David Ruelle
+M
+马尔 David Marr
+马库恩 William McCune
+马纳 Zohar Manna
+马泽尔 Johann Nepomuk Maelzel 麦吉尔夫雷 James McGilvray
+麦卡洛克 Warren McCulloch
+麦卡锡 John McCarthy
+麦克达克 Pamela McCorduck
+麦克道高尔 Duncan MacDougall 麦克德莫 Drew McDermott
+麦克利兰德 James McLelland
+
+309
+曼宁 Chris Manning
+曼斯菲尔德 Mike Mansfield
+芒福德 David Mumford
+毛彻里 John Mauchly
+梅尔泽 Bernard Meltzer
+梅勒 Norman Mailer
+蒙克 Ray Monk
+米德 Carver Mead
+米德尔多普 Aart Middeldorp
+米科洛夫 TomášMikolov 米勒 George Miller
+米奇 Donald Michie
+米切尔 Tom Mitchell
+米歇尔 Melanie Mitchell
+明斯基 Marvin Lee Minsky
+摩尔 J Strother Moore
+摩根斯顿 Oskar Morgenstern
+莫尔 Trenchard More
+莫拉 Leonardo de Moura
+莫里斯 Ian Morris
+莫泽 Jürgen Moser
+N
+
+310
+纳什 John Nash
+奈奎斯特 Harry Nyquist
+内尔逊 Greg Nelson
+尼尔森 Nils J.Nilsson
+尼普科 Tobias Nipkow
+牛伯恩 Monty Newborn
+纽厄尔 Allen Newell
+纽曼 Judith Newman
+纽曼 Max Newman
+诺伯格 Norberg
+诺德豪斯 William D.Nordhaus 诺曼 Don Norman
+诺维格 Peter Norvig
+O
+欧赫 Franz Josef Och
+欧文白克 Ryan Overbeck
+P
+帕帕季米特里乌 Christos
+Papadimitriou
+庞加莱 Jules Henri Poincaré 庞提 Maurice Merleau-Ponty 佩里 Matthew
+Perry
+佩珀特 Seymour Papert
+
+311
+佩奇 Larry Page
+彭罗斯 Roger Penrose
+皮尔士 Charles Sanders Peirce 皮茨 Walter Pitts
+皮亚杰 Jean Piaget
+皮亚诺 Giuseppe Peano
+平克 Steven Pinker
+坡斯特 Emil Post
+珀里思 Alan Perlis
+普拉维茨 Dag Pragwitz
+普雷斯泰 David Plaisted
+普利斯博格 Mojżesz Presburger 普林茨 Dietrich Prinz
+普特南 Hilary Putnam
+Q
+齐齐克利斯 John Tsitsiklis
+乔丹 Michael Irwin Jordan 乔姆斯基 Avram Noam Chomsky 丘奇 Alonzo
+Church
+R
+瑞迪 Raj Reddy
+瑞思尼克 Robert Resnick
+S
+萨顿 Richard Sutton
+
+312
+萨缪尔森 Paul Samuelson
+萨瑟兰 Ivan Edward Sutherland 萨斯曼 Gerald Jay Sussman
+萨特克里夫 Geoff Sutfliffe
+塞尔 John Searle
+塞弗里奇 Oliver Selfridge
+塞缪尔 Arthur Samuel
+塞耶斯 Dorothy Sayers
+赛本科 George Cybenko
+沙布 Michael Shub
+尚卡尔 Natarajan Shankar
+舍佛 Jonathan Schaeffer
+施伦伯杰 Schlumberger
+施密特 Francis Otto Schmitt 施密特休伯 Jürgen Schmidhuber 史蒂克尔 Mark
+E.Stickel
+史密斯 S.W.Smith
+司马贺 Herbert Simon
+斯宾尼利 Nico Spinelli
+斯金纳 Burrhus Frederic Skinner 斯考特 Dana Scott
+斯梅尔 Stephen Smale
+斯帕斯基 Boris Spassky
+斯坦因 Aurel Stein
+斯特雷奇 Christopher Strachey 所罗门 Ronald Solomon
+
+313
+所罗门诺夫 Ray Solomonoff
+索托伊 Marcus du Sautoy
+索瓦 John Sowa
+T
+塔尔斯基 Alfred Tarski
+塔克 Albert Tucker
+塔南鲍姆 Joshua Tenenbaum
+塔南鲍姆 Marty Tenenbaum
+泰格马克 Max Tegmark
+泰勒 Edward Teller
+泰勒 Richard Taylor
+泰勒 Robert Taylor
+汤普森 Ken Thompson
+特劳布 Joseph Traub
+特蕾西娅 Maria Theresia
+廷斯利 Marion Tinsley
+图灵 Alan Turing
+托马斯 Joy A.Thomas
+W
+瓦丁格 Richard Waldinger
+瓦尔迪 Moshe Vardi
+
+314
+瓦连特 Leslie Valiant
+瓦普尼克 Vladimir Vapnik
+外尔 Hermann Weyl
+威尔金森 David Wilkinson
+威勒 Rudolf Wille
+威廉姆斯 Ronald J.Williams
+威瑟尔 Torsten Wiesel
+韦弗 Warren Weaver
+维布伦 Oswald Veblen
+维德罗 Bernard Widrow
+维格纳 Eugene Wigner
+维纳 Norbert Wiener
+维诺格拉德 Terry Winograd
+维斯纳 Jerry Wiesner
+维特根斯坦 Ludwig Wittgenstein 维特涅 Paul Vitanyi
+魏森鲍姆 Joseph Weizenbaum
+温伯格 Steve Weinberg
+温克 Steve Winker
+温斯顿 Patrick Winston
+沃波斯 Paul Werbos
+沃尔克 Jearl Walker
+沃尔弗拉姆 Stephen Wolfram
+
+315
+沃科金斯 Chris Watkins
+沃伦 David Warren
+沃伦可夫 Andrei Voronkov
+沃森 James Watson
+沃思 Larry Wos
+沃斯 Niklaus Wirth
+沃兹尼亚克 Steve Wozniak
+乌泽尔 Suzana Herculano-Houzel 伍德华 Philip Woodward
+X
+西拉德 Leo Szilard
+西蒙尼 Charles Simonyi
+希尔伯特 David Hilbert
+希利斯 Danny Hillis
+席尔瓦 David Silver
+夏皮若 Ehud Shapiro
+香农 Claude Shannon
+香克 Roger Schank
+肖 David E.Shaw
+肖 Peter Shor
+肖特莱福 Edward Shortliffe
+谢诺夫斯基 Terry Sejnowski
+辛顿 Geoffrey Hinton
+
+316
+休伊特 Carl Hewitt
+Y
+杨立昆 Yann LeCun
+雅各布森 Annie Jacobsen
+亚里士多德 Aristotle
+伊顿 Eaton
+伊弗拉 Georges Ifrah
+伊利亚 Ilya Sutskever
+英曼 Inman
+约翰逊 David S.Johnson
+约翰逊 Neville Johnson
+约翰逊 William Ernest Johnson 中文人名
+金芳蓉 Fan Chung
+李家同 Richad Char-Tung Lee 王士元 William Wang
+吴恩达 Andrew Ng
+项洁 Jieh Hsiang
+周咸青 Chou Shang-ching
+其他人名
+福岛邦彦 Kunihiko Fukushima 甘利俊一 Shun'ichi Amari
+古川康一 Koichi Furukara
+李世石 Lee Sedol
+
+317
+上田和纪 Kazunori Ueda
+渕一博 Kazuhiro Fuchi
+元冈达 Tohru Moto-Oka
+宗像俊则 Toshinori Munakata
